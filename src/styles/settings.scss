@@ -1,10 +1,13 @@
-/**
- * src/styles/settings.scss
- *
- * Configures SASS variables and Vuetify overwrites
- */
-
-// https://vuetifyjs.com/features/sass-variables/`
-// @use 'vuetify/settings' with (
-//   $color-pack: false
-// );
+@use 'vuetify/settings' with (
+  $color-pack: false,
+  $border-radius-root: 8px,
+  $transition-duration-root: 0.18s,
+  $typography: (
+    'button': (
+      'size': 0.9375rem,
+      'weight': 500,
+      'letter-spacing': 0,
+      'text-transform': none
+    )
+  )
+);
